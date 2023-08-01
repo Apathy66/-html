@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>标签(下)</title>
+</head>
+
+<body>
+	<h2>1.表格示例</h2>
+	<hr>
+	<table>
+		<tr><th>姓名</th>	<th>性别</th>	<th>年龄</th></tr>
+		<tr><td>刘德华</td>	<td>男</td>	<td>56</td></tr>
+		<tr><td>张学友</td>	<td>男</td>	<td>57</td></tr>
+		<tr><td>郭富城</td>	<td>男</td>	<td>51</td></tr>
+		<tr><td>黎明</td>	<td>男</td>	<td>59</td></tr>
+	</table>
+	<hr>
+	
+	<h2>2.表格属性</h2>
+	<hr>
+	
+	<table align="center" border="" cellpadding="0" cellspacing="0" width="700">
+		<tr><th>属性名</th>	<th>属性值</th>	<th>描述</th></tr>
+		<tr><td>align</td>	<td>left,center,right</td>	<td>表格在页面对齐方式</td></tr>
+		<tr><td>border</td>	<td>1或者""</td>	<td>表格是否边框</td></tr>
+		<tr><td>cellpadding</td>	<td>像素值</td>	<td>单元边沿到内容的空白</td></tr>
+		<tr><td>cellspacing</td>	<td>像素值</td>	<td>单元格之间的空白</td></tr>
+		<tr><td>width</td>	<td>像素值或者百分比</td>	<td>表格宽度</td></tr>
+	</table>
+	<hr>
+	
+	<h2>3.小说案例</h2>
+	<hr>
+	
+	<table align="center" border="" cellpadding="5" cellspacing="0" width="700">
+		<tr><th>排名</th>	<th>关键词</th>	<th>趋势</th> <th>今日搜索</th>	<th>最近七日</th>	<th>趋势</th><</tr>
+		<tr><td>1</td>	<td>鬼吹灯</td>	<td><img src="logo.png" width="40"></td>	<td>123</td>	<td>422</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+		<tr><td>2</td>	<td>盗墓笔记</td>	<td><img src="logo.png" width="40"></td>	<td>7542</td>	<td>5424</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+		<tr><td>3</td>	<td>西游记</td>	<td><img src="logo.png" width="40"></td>	<td>43543</td>	<td>542</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+		<tr><td>4</td>	<td>东游记</td>	<td><img src="logo.png" width="40"></td>	<td>425</td>	<td>452</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+		<tr><td>5</td>	<td>甄嬛传</td>	<td><img src="logo.png" width="40"></td>	<td>537</td>	<td>425</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+		<tr><td>6</td>	<td>水浒传</td>	<td><img src="logo.png" width="40"></td>	<td>8675</td>	<td>524</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+		<tr><td>7</td>	<td>三国演义</td>	<td><img src="logo.png" width="40"></td>	<td>5435</td>	<td>524</td>	<td><a href="https://tieba.baidu.com/" target="_blank">贴吧</a></td></tr>
+	</table>
+	<hr>
+	
+	<h2>4.表格结构标签thead,tbody</h2>
+	<hr>
+	<table>
+		<thead><tr><th>姓名</th>	<th>性别</th>	<th>年龄</th></tr></thead>
+		<tbody>
+			<tr><td>刘德华</td>	<td>男</td>	<td>56</td></tr>
+			<tr><td>张学友</td>	<td>男</td>	<td>57</td></tr>
+			<tr><td>郭富城</td>	<td>男</td>	<td>51</td></tr>
+			<tr><td>黎明</td>	<td>男</td>	<td>59</td></tr>
+		</tbody>
+	</table>
+	<hr>
+	
+	<h2>5.合并单元格</h2>
+	<hr>
+	<h3>跨行合并rowspan="合并数量"</h3>
+	<h3>跨列合并colspan="合并数量"</h3>
+	<h3>目标单元格靠左靠上</h3>
+	<table align="center" border="" width="500" cellpadding="20" cellspacing="0">
+		<tr><td rowspan="3"></td>	<td></td>	<td colspan="2"></td></tr>
+		<tr><td></td>	<td></td>	<td></td></tr>
+		<tr><td></td>	<td></td>	<td></td></tr>
+		<tr><td></td>	<td></td>	<td colspan="2"></td></tr>
+	</table>
+	<hr>
+</body>
+</html>

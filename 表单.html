@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单</title>
+</head>
+
+<body>
+	<h3>表单</h3>
+<!--表单域-->
+	<form action="index.html" method="get" name="name1" >
+<!--		文本框，可以输入任何文字-->
+		用户名：<input type="text" name="username" value="请输入用户名"><br>
+<!--		密码框，看不见输入的密码-->
+		密码：<input type="password" name="pswd" ><br>
+<!--		单选按钮,必须要有相同的name，才能实现多选一-->
+		性别：男 <input type="radio" name="sex" value="男">	
+		女 <input type="radio" name="sex" value="女">	
+		塑料袋<input type="radio" name="sex" value="塑料袋"><br>
+<!--		复选按钮-->
+		爱好：吃饭<input type="checkbox" checked>	睡觉<input type="checkbox">	打飞机<input type="checkbox"><br>
+<!--		checked，默认选择-->
+<!--		用户最多输入字符-->
+		请输入：<input type="text" name="username" value="最多输入6个字符" maxlength="6"><br>
+		
+<!--		提交按钮,提交数据-->
+		<input type="submit" value="快速提交">
+<!--		清楚表单数据-->
+		<input type="reset" value="重新填写">
+<!--		普通按钮,结合js使用-->
+		<input type="button" value="普通按钮">
+<!--		文件域-->
+		<input type="file">
+		
+	</form>
+	
+	<h3>lable标签</h3>
+<!--	绑定表单元素-->
+	<label for="用户名">用户名：</label><input type="text"  id="用户名" name="username" value="请输入用户名"> 
+	
+	<h3>表单控件</h3>
+	<form action="index.html">
+	籍贯
+		<select>
+			<option value="">北京</option>
+			<option>天津</option>
+			<option>上海</option>
+			<option selected>宁夏</option>
+			<option>辽宁</option>
+		</select>
+	</form>
+	
+	<h3>文本域</h3>
+	<form>
+		留言板:
+<!--		cols=每行中字符，rows=显示的行数-->
+		<textarea rows="2" cols="20"> hello! </textarea>
+	</form>
+</body>
+</html>
